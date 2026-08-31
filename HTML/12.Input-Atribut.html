@@ -1,0 +1,89 @@
+<!-- Menandakan bahwa dokumen ini menggunakan HTML5 -->
+<!DOCTYPE html>
+
+<!-- Menentukan bahasa utama halaman -->
+<html lang="en">
+
+<head>
+    <!-- Bagian pengaturan dan informasi halaman -->
+
+    <!-- Mengatur karakter agar teks dapat ditampilkan dengan benar -->
+    <meta charset="UTF-8">
+
+    <!-- Membuat tampilan menyesuaikan ukuran layar perangkat -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Judul halaman yang tampil pada tab browser -->
+    <title>Atribut Form</title>
+</head>
+
+<body>
+    <!-- Bagian body berisi konten yang ditampilkan di halaman -->
+
+    <!-- Judul utama halaman -->
+    <h1>Contoh Atribut Form</h1>
+
+    <!-- form digunakan untuk membungkus input dari pengguna -->
+    <form>
+
+        <!-- Label untuk input nama -->
+        <label for="name">Nama</label>
+
+        <!-- name digunakan sebagai nama field saat data form dikirim -->
+        <!-- id digunakan sebagai identitas unik dan dihubungkan dengan label -->
+        <!-- placeholder memberikan contoh atau petunjuk singkat pada input -->
+        <!-- required membuat input wajib diisi -->
+        <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Masukkan nama"
+            required
+        >
+
+        <br><br>
+
+        <!-- Label untuk input umur -->
+        <label for="age">Umur</label>
+
+        <!-- value memberikan nilai awal pada input -->
+        <!-- min dan max membatasi nilai minimum dan maksimum -->
+        <input
+            type="number"
+            name="age"
+            id="age"
+            value="18"
+            min="17"
+            max="100"
+        >
+
+        <br><br>
+
+        <!-- readonly membuat input tidak dapat diedit -->
+        <input
+            type="text"
+            value="Data tidak dapat diubah"
+            readonly
+        >
+
+        <br><br>
+
+        <!-- disabled membuat input tidak dapat digunakan -->
+        <input
+            type="text"
+            value="Input tidak aktif"
+            disabled
+        >
+
+        <br><br>
+
+        <!-- checked menandai checkbox sebagai pilihan yang sudah dipilih -->
+        <label>
+            <input type="checkbox" checked>
+            Saya setuju
+        </label>
+
+    </form>
+
+</body>
+</html>

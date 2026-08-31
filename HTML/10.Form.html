@@ -1,0 +1,63 @@
+<!-- Menandakan bahwa dokumen ini menggunakan HTML5 -->
+<!DOCTYPE html>
+
+<!-- Menentukan bahasa utama halaman -->
+<html lang="en">
+
+<head>
+    <!-- Bagian pengaturan dan informasi halaman -->
+
+    <!-- Mengatur karakter agar teks dapat ditampilkan dengan benar -->
+    <meta charset="UTF-8">
+
+    <!-- Membuat tampilan menyesuaikan ukuran layar perangkat -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Judul halaman yang tampil pada tab browser -->
+    <title>Form & Input</title>
+</head>
+
+<body>
+    <!-- Bagian body berisi konten yang ditampilkan di halaman -->
+
+    <!-- Judul utama halaman -->
+    <h1>Form Pendaftaran</h1>
+
+    <!-- form digunakan untuk membungkus input dari pengguna -->
+    <form action="/register" method="post">
+
+        <!-- label digunakan untuk memberikan nama atau keterangan pada input -->
+        <label for="name">Nama</label>
+
+        <!-- input type text digunakan untuk memasukkan teks -->
+        <input id="name" name="name" type="text" required>
+
+        <br>
+        <br>
+
+        <!-- label digunakan untuk memberikan nama atau keterangan pada input -->
+        <label for="email">Email</label>
+
+        <!-- input type email digunakan untuk memasukkan alamat email -->
+        <input id="email" name="email" type="email" required>
+
+        <br>
+        <br>
+
+        <!-- label digunakan untuk memberikan nama atau keterangan pada input -->
+        <label for="password">Password</label>
+
+        
+        <!-- input type password menyembunyikan karakter yang diketik -->
+        <input id="password" name="password" type="password">
+
+        <br>
+        <br>
+
+        <!-- button type submit digunakan untuk mengirim data form -->
+        <button type="submit">Daftar</button>
+
+    </form>
+
+</body>
+</html>

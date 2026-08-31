@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Andi Pratama | Web Developer</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Andi Pratama</h1>
+
+        <nav>
+            <!-- ini untuk berpindah ke tampilan about -->
+            <a href="#about">Tentang</a>
+            <!-- ini untuk berpindah ke tampilan project -->
+            <a href="#projects">Project</a>
+            <!-- ini untuk berpindah ke tampilan contact -->
+            <a href="#contact">Kontak</a>
+        </nav>
+    </header>
+<!-- ini merupakan tempat khusus isi main -->
+    <main>
+
+        <section id="about">
+            <h2>Tentang Saya</h2>
+
+            <figure>
+                <img
+                    src="asset/image.png"
+                    alt="Foto profil Andi Pratama"
+                    width="200"
+                >
+
+                <figcaption>
+                    Andi Pratama — Junior Web Developer
+                </figcaption>
+            </figure>
+
+            <p>
+                Halo! Saya Andi Pratama, seorang Junior Web Developer yang
+                memiliki ketertarikan dalam pengembangan website modern dan
+                responsif. Saya sedang mempelajari HTML, CSS, JavaScript, serta
+                berbagai teknologi web untuk membangun website yang menarik
+                dan mudah digunakan.
+            </p>
+        </section>
+
+        <section id="projects">
+            <h2>Project Saya</h2>
+
+            <article>
+                <h3>Website Portfolio Pribadi</h3>
+
+                <p>
+                    Website portfolio pribadi untuk menampilkan informasi
+                    tentang diri saya, kemampuan, pengalaman, dan berbagai
+                    project yang pernah saya kerjakan.
+                </p>
+
+                <p>
+                    Teknologi: HTML dan CSS
+                </p>
+            </article>
+
+            <article>
+                <h3>Website Kedai Kopi</h3>
+
+                <p>
+                    Website sederhana untuk memperkenalkan sebuah usaha kedai
+                    kopi, lengkap dengan informasi menu, lokasi, dan kontak.
+                </p>
+
+                <p>
+                    Teknologi: HTML, CSS, dan JavaScript
+                </p>
+            </article>
+
+            <article>
+                <h3>Aplikasi To-Do List</h3>
+
+                <p>
+                    Aplikasi sederhana untuk membantu pengguna mencatat,
+                    menambahkan, dan menghapus daftar kegiatan sehari-hari.
+                </p>
+
+                <p>
+                    Teknologi: HTML, CSS, dan JavaScript
+                </p>
+            </article>
+        </section>
+
+        <section id="contact">
+            <h2>Hubungi Saya</h2>
+
+            <p>
+                Jika Anda ingin bekerja sama atau memiliki pertanyaan,
+                silakan kirimkan pesan melalui formulir berikut.
+            </p>
+
+            <form>
+                <label for="name">Nama</label>
+                <input
+                    id="name"
+                    name="name"
+                    type="text"
+                    placeholder="Masukkan nama Anda"
+                    required
+                >
+
+                <label for="email">Email</label>
+                <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    placeholder="contoh@email.com"
+                    required
+                >
+
+                <label for="message">Pesan</label>
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    placeholder="Tulis pesan Anda di sini..."
+                    required
+                ></textarea>
+
+                <button type="submit">Kirim Pesan</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <small>&copy; 2026 Andi Pratama. All Rights Reserved.</small>
+    </footer>
+
+</body>
+
+</html>

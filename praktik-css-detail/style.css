@@ -1,0 +1,1269 @@
+/* 
+   0. CSS VARIABLES
+ */
+
+:root {
+    --primary-color: #2563eb;
+    --primary-dark: #1d4ed8;
+    --secondary-color: #64748b;
+    --success-color: #16a34a;
+    --danger-color: #dc2626;
+    --warning-color: #f59e0b;
+    --purple-color: #7c3aed;
+
+    --text-color: #1e293b;
+    --muted-color: #64748b;
+    --background-color: #f8fafc;
+    --white-color: #ffffff;
+    --border-color: #cbd5e1;
+
+    --small-spacing: 8px;
+    --medium-spacing: 16px;
+    --large-spacing: 24px;
+    --section-spacing: 40px;
+
+    --border-radius: 12px;
+}
+
+
+/* 
+   1. DASAR / RESET
+ */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 30px;
+
+    font-family: Arial, sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+img {
+    max-width: 100%;
+}
+
+button,
+input {
+    font: inherit;
+}
+
+.page-header,
+main,
+.page-footer {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.page-header {
+    padding: 40px 0;
+}
+
+.eyebrow {
+    margin-bottom: 8px;
+
+    color: var(--primary-color);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.page-header h1 {
+    margin: 0 0 12px;
+    font-size: 42px;
+}
+
+.page-header > p:last-child {
+    max-width: 700px;
+    margin: 0;
+
+    color: var(--muted-color);
+    line-height: 1.7;
+}
+
+.section {
+    padding: var(--section-spacing) 0;
+}
+
+.section-heading {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    margin-bottom: 24px;
+}
+
+.number {
+    display: grid;
+    place-items: center;
+
+    width: 48px;
+    height: 48px;
+
+    flex-shrink: 0;
+
+    color: white;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+
+    font-weight: 700;
+}
+
+.section-heading h2 {
+    margin: 0 0 5px;
+    font-size: 26px;
+}
+
+.section-heading p {
+    margin: 0;
+    color: var(--muted-color);
+}
+
+hr {
+    margin: 0;
+
+    border: none;
+    border-top: 1px solid var(--border-color);
+}
+
+.demo-area {
+    padding: 24px;
+    background-color: white;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+}
+
+
+/* 
+   2. COLOR
+ */
+
+.color-merah {
+    color: #2197f3;
+}
+
+.color-blue {
+    color: blue;
+}
+
+.color-custom {
+    color: #7c3aed;
+}
+
+
+/* 
+   3. BACKGROUND
+ */
+
+.background-demo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--large-spacing);
+}
+
+.background-color-box,
+.background-gradient-box {
+    min-height: 160px;
+    padding: 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: var(--border-radius);
+    font-weight: 700;
+}
+
+.background-color-1{
+    background-color: green;
+}
+
+.background-gradient-box {
+    color: white;
+    background: linear-gradient(135deg, #b3eb25, #2a203c);
+}
+
+
+/* 
+   4. WIDTH & HEIGHT
+ */
+
+.size-demo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: var(--medium-spacing);
+}
+
+.size-box {
+    padding: 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    background-color: var(--primary-color);
+    border-radius: var(--border-radius);
+}
+
+.small-box {
+    width: 200px;
+    height: 10px;
+}
+
+.medium-box {
+    width: 100px;
+    height: 150px;
+}
+
+.responsive-box {
+    width: 500px;
+    max-width: 100%;
+    height: 100px;
+}
+
+
+/* 
+   5. PADDING
+ */
+
+.padding-demo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--medium-spacing);
+}
+
+.padding-box {
+    background-color: #dcfce7;
+    border: 2px solid var(--success-color);
+}
+
+.padding-box span {
+    display: block;
+    padding: 8px;
+    background-color: white;
+}
+
+.padding-small {
+    padding: 10px;
+}
+
+.padding-large {
+    padding: 40px;
+}
+
+.padding-different {
+    /* padding: 20px 30px 50px 70px; */
+    padding-top: 40px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+
+
+/* 
+   6. MARGIN
+ */
+
+.margin-demo {
+    display: flex;
+    align-items: center;
+
+    padding: 20px;
+    background-color: white;
+    border: 1px dashed var(--border-color);
+}
+
+.margin-box {
+    padding: 20px;
+    background-color: #fef3c7;
+    border: 2px solid var(--warning-color);
+}
+
+.margin-large {
+    margin: 40px 20px 80px 40px;
+}
+
+.auto-margin-demo {
+    margin-top: 24px;
+    padding: 20px;
+
+    background-color: white;
+    border: 1px dashed var(--border-color);
+}
+
+.center-margin-box {
+    width: 300px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+
+    text-align: center;
+
+    background-color: #dbeafe;
+    border: 2px solid var(--primary-color);
+}
+
+
+/* 
+   7. BORDER
+ */
+
+.border-demo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--medium-spacing);
+}
+
+.border-box {
+    width: 160px;
+    padding: 25px 15px;
+
+    text-align: center;
+    background-color: white;
+}
+
+.solid-border {
+    border: 3px solid var(--primary-color);
+}
+
+.dashed-border {
+    border: 3px dashed var(--success-color);
+}
+
+.dotted-border {
+    border: 3px dotted var(--danger-color);
+}
+
+.double-border {
+    border: 5px double var(--purple-color);
+}
+
+
+/* 
+   8. BORDER RADIUS
+ */
+
+.radius-demo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--large-spacing);
+}
+
+.radius-box {
+    width: 150px;
+    height: 100px;
+
+    display: grid;
+    place-items: center;
+
+    color: white;
+    background-color: var(--purple-color);
+}
+
+.radius-small {
+    border-radius: 10px;
+}
+
+.radius-large {
+    border-radius: 24px;
+}
+
+.radius-circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+
+/* 
+   9. BOX MODEL
+ */
+
+.box-model-demo {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.model-margin {
+    padding: 30px;
+    background-color: #fef3c7;
+}
+
+.model-border {
+    padding: 20px;
+    background-color: #fed7aa;
+}
+
+.model-padding {
+    padding: 25px;
+    background-color: #bfdbfe;
+}
+
+.model-content {
+    padding: 30px;
+    color: white;
+    background-color: var(--primary-color);
+}
+
+.box-sizing-demo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--large-spacing);
+
+    margin-top: 30px;
+}
+
+.box-sizing-box {
+    width: 260px;
+    height: 100px;
+    padding: 25px;
+
+    background-color: #e0e7ff;
+    border: 10px solid #6366f1;
+}
+
+.content-sizing {
+    box-sizing: content-box;
+}
+
+.border-sizing {
+    box-sizing: border-box;
+}
+
+
+/* 
+   10. FONT & TEXT
+ */
+
+.typography-demo {
+    padding: 24px;
+    background-color: white;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+}
+
+.font-family-demo {
+    font-family: Georgia, serif;
+}
+
+.font-size-small {
+    font-size: 14px;
+}
+
+.font-size-medium {
+    font-size: 20px;
+}
+
+.font-size-large {
+    font-size: 30px;
+}
+
+.font-weight-light {
+    font-weight: 300;
+}
+
+.font-weight-bold {
+    font-weight: 700;
+}
+
+.font-style-italic {
+    font-style: italic;
+}
+
+.line-height-demo {
+    max-width: 600px;
+    line-height: 2;
+}
+
+.text-align-center {
+    padding: 15px;
+    text-align: center;
+    background-color: #f1f5f9;
+}
+
+.text-decoration-demo {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.text-decoration-demo:hover {
+    text-decoration: underline;
+}
+
+
+/* 
+   11. DISPLAY
+ */
+
+.display-demo {
+    padding: 24px;
+    background-color: white;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+}
+
+.display-block {
+    display: block;
+    width: 250px;
+    max-width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #dbeafe;
+}
+
+.inline-demo {
+    margin-bottom: 20px;
+}
+
+.display-inline {
+    display: inline;
+    padding: 10px;
+    background-color: #fef3c7;
+}
+
+.inline-block-demo {
+    margin-bottom: 20px;
+}
+
+.display-inline-block {
+    display: inline-block;
+    width: 150px;
+    padding: 15px;
+    margin-right: 10px;
+    background-color: #dcfce7;
+}
+
+.display-none {
+    display: none;
+}
+
+
+/* 
+   12. FLEXBOX
+ */
+
+.flex-demo {
+    display: grid;
+    gap: var(--large-spacing);
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: colom;
+    gap: var(--medium-spacing);
+
+    padding: 20px;
+    border: 2px dashed var(--border-color);
+}
+
+.flex-column-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--medium-spacing);
+
+    padding: 20px;
+    border: 2px dashed var(--border-color);
+}
+
+.flex-item {
+    flex: 1;
+    padding: 30px;
+
+    text-align: center;
+
+    background-color: #dbeafe;
+    border: 2px solid var(--primary-color);
+}
+
+
+/* 
+   13. JUSTIFY CONTENT & ALIGN ITEMS
+ */
+
+.alignment-demo {
+    display: grid;
+    gap: var(--large-spacing);
+}
+
+.justify-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    min-height: 150px;
+    padding: 20px;
+
+    border: 2px dashed var(--border-color);
+}
+
+.align-item {
+    width: 80px;
+    height: 80px;
+
+    display: grid;
+    place-items: center;
+
+    background-color: #fef3c7;
+    border: 2px solid var(--warning-color);
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 200px;
+
+    border: 2px dashed var(--border-color);
+}
+
+.center-item {
+    padding: 30px 50px;
+
+    background-color: #dcfce7;
+    border: 2px solid var(--success-color);
+}
+
+
+/* 
+   14. FLEX WRAP & GAP
+ */
+
+.flex-wrap-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.wrap-item {
+    width: 120px;
+    padding: 30px;
+
+    text-align: center;
+
+    background-color: #fef3c7;
+    border: 2px solid var(--warning-color);
+}
+
+
+/* 
+   15. CSS GRID
+ */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--medium-spacing);
+}
+
+.grid-item {
+    padding: 35px;
+
+    text-align: center;
+
+    background-color: #e0e7ff;
+    border: 2px solid #6366f1;
+}
+
+
+/* 
+   16. GRID COLUMN & GRID ROW
+ */
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    grid-template-rows: auto 260px auto;
+    gap: var(--medium-spacing);
+}
+
+.layout-header,
+.layout-sidebar,
+.layout-content,
+.layout-footer {
+    padding: 25px;
+}
+
+.layout-header {
+    grid-column: 1 / 3;
+    background-color: #dbeafe;
+}
+
+.layout-sidebar {
+    grid-row: 2 / 3;
+    background-color: #fef3c7;
+}
+
+.layout-content {
+    background-color: #dcfce7;
+}
+
+.layout-footer {
+    grid-column: 1 / 3;
+    background-color: #fee2e2;
+}
+
+
+/* 
+   17. POSITION
+ */
+
+.position-demo {
+    display: grid;
+    gap: var(--large-spacing);
+}
+
+.relative-parent {
+    position: relative;
+
+    min-height: 200px;
+    padding: 20px;
+
+    background-color: #dbeafe;
+    border: 2px solid var(--primary-color);
+}
+
+.absolute-child {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    padding: 10px 15px;
+
+    color: white;
+    background-color: var(--danger-color);
+    border-radius: 999px;
+}
+
+.sticky-demo {
+    position: sticky;
+    top: 10px;
+
+    width: fit-content;
+    padding: 15px 20px;
+
+    background-color: #fef3c7;
+    border: 2px solid var(--warning-color);
+}
+
+
+/* 
+   18. OVERFLOW
+ */
+
+.overflow-demo {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--medium-spacing);
+}
+
+.overflow-box {
+    height: 110px;
+    padding: 15px;
+
+    background-color: white;
+    border: 2px solid var(--border-color);
+}
+
+.overflow-visible {
+    overflow: visible;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.overflow-scroll {
+    overflow: scroll;
+}
+
+.overflow-auto {
+    overflow: auto;
+}
+
+
+/* 
+   19. SHADOW
+ */
+
+.shadow-demo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 60px;
+}
+
+.shadow-box {
+    padding: 35px;
+    background-color: white;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.shadow-text {
+    font-size: 30px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+/* 
+   20. OPACITY
+ */
+
+.opacity-demo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--medium-spacing);
+}
+
+.opacity-box {
+    padding: 30px;
+
+    color: white;
+    background-color: var(--primary-color);
+}
+
+.opacity-one {
+    opacity: 1;
+}
+
+.opacity-seven {
+    opacity: 0.7;
+}
+
+.opacity-four {
+    opacity: 0.4;
+}
+
+
+/* 
+   21. CURSOR
+ */
+
+.cursor-demo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--medium-spacing);
+}
+
+.cursor-demo button {
+    padding: 14px 20px;
+
+    color: white;
+    background-color: var(--primary-color);
+
+    border: none;
+    border-radius: var(--border-radius);
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.cursor-help {
+    cursor: help;
+}
+
+.cursor-not-allowed {
+    cursor: not-allowed;
+}
+
+
+/* 
+   22. OBJECT FIT
+ */
+
+.object-fit-demo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--large-spacing);
+}
+
+.object-fit-demo figure {
+    margin: 0;
+}
+
+.object-fit-demo figcaption {
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.object-fit-demo img {
+    width: 100%;
+    height: 200px;
+
+    background-color: white;
+    border: 2px solid var(--border-color);
+}
+
+.object-cover {
+    object-fit: cover;
+}
+
+.object-contain {
+    object-fit: contain;
+}
+
+.object-fill {
+    object-fit: fill;
+}
+
+
+/* 
+   23. TRANSITION
+ */
+
+.transition-button {
+    padding: 15px 25px;
+
+    color: white;
+    background-color: var(--primary-color);
+
+    border: none;
+    border-radius: var(--border-radius);
+
+    cursor: pointer;
+
+    transition: background-color 0.3s ease,
+                transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.transition-button:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(37, 99, 235, 0.25);
+}
+
+
+/* 
+   24. TRANSFORM
+ */
+
+.transform-demo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.transform-box {
+    width: 150px;
+    padding: 30px 10px;
+
+    text-align: center;
+
+    background-color: #dcfce7;
+    border: 2px solid var(--success-color);
+
+    transition: transform 0.3s ease;
+}
+
+.translate-box:hover {
+    transform: translateY(-15px);
+}
+
+.scale-box:hover {
+    transform: scale(1.15);
+}
+
+.rotate-box:hover {
+    transform: rotate(8deg);
+}
+
+
+/* 
+   25. PSEUDO CLASS
+ */
+
+.pseudo-class-demo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--medium-spacing);
+}
+
+.pseudo-button {
+    padding: 14px 20px;
+
+    color: white;
+    background-color: var(--primary-color);
+
+    border: none;
+    border-radius: var(--border-radius);
+
+    cursor: pointer;
+}
+
+.pseudo-button:hover {
+    background-color: var(--primary-dark);
+}
+
+.pseudo-button:active {
+    transform: scale(0.95);
+}
+
+.focus-input,
+.placeholder-input {
+    width: 320px;
+    max-width: 100%;
+    padding: 12px;
+
+    border: 2px solid var(--border-color);
+    border-radius: var(--border-radius);
+}
+
+.focus-input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.15);
+}
+
+.checkbox-label input:checked {
+    accent-color: var(--success-color);
+}
+
+.disabled-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+
+/* 
+   26. PSEUDO ELEMENT
+ */
+
+.before-after-text::before {
+    content: "🔥 ";
+}
+
+.before-after-text::after {
+    content: " ✓";
+    color: var(--success-color);
+}
+
+.placeholder-input::placeholder {
+    color: var(--secondary-color);
+    font-style: italic;
+}
+
+
+/* 
+   27. CSS SELECTOR
+ */
+
+/* Tag Selector */
+.selector-demo > p {
+    line-height: 1.7;
+}
+
+/* Class Selector */
+.class-selector {
+    color: var(--success-color);
+}
+
+/* ID Selector */
+#id-selector {
+    color: var(--danger-color);
+    font-weight: 700;
+}
+
+/* Descendant Selector */
+.descendant-parent p {
+    padding: 15px;
+    background-color: #fef3c7;
+}
+
+/* Attribute Selector */
+input[type="email"] {
+    width: 320px;
+    max-width: 100%;
+    padding: 12px;
+
+    border: 2px solid var(--primary-color);
+    border-radius: var(--border-radius);
+}
+
+
+/* 
+   28. CSS VARIABLES
+ */
+
+.variable-demo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--medium-spacing);
+}
+
+.primary-button,
+.secondary-button {
+    padding: 14px 20px;
+
+    color: white;
+
+    border: none;
+    border-radius: var(--border-radius);
+
+    cursor: pointer;
+}
+
+.primary-button {
+    background-color: var(--primary-color);
+}
+
+.secondary-button {
+    background-color: var(--secondary-color);
+}
+
+.variable-card {
+    padding: var(--large-spacing);
+
+    background-color: white;
+    border: 2px solid var(--primary-color);
+    border-radius: var(--border-radius);
+}
+
+
+/* 
+   29. RESPONSIVE DESIGN & MEDIA QUERY
+ */
+
+.responsive-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--medium-spacing);
+}
+
+.responsive-card {
+    padding: 25px;
+
+    background-color: white;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+}
+
+.responsive-card h3 {
+    margin-top: 0;
+}
+
+
+/* 
+   30. FOOTER
+ */
+
+.page-footer {
+    padding: 30px 0;
+    color: var(--muted-color);
+    text-align: center;
+}
+
+
+/* 
+   31. MEDIA QUERY
+ */
+
+@media (max-width: 768px) {
+
+    body {
+        padding: 20px;
+    }
+
+    .page-header {
+        padding: 20px 0 30px;
+    }
+
+    .page-header h1 {
+        font-size: 32px;
+    }
+
+    .background-demo,
+    .object-fit-demo {
+        grid-template-columns: 1fr;
+    }
+
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .justify-container {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-layout {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .layout-header,
+    .layout-footer {
+        grid-column: auto;
+    }
+
+    .layout-sidebar {
+        grid-row: auto;
+    }
+
+    .overflow-demo {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .responsive-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .section-heading {
+        align-items: flex-start;
+    }
+
+    .number {
+        width: 42px;
+        height: 42px;
+    }
+
+    .border-box,
+    .radius-box {
+        width: 100%;
+    }
+
+    .margin-demo {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .margin-large {
+        margin: 20px 0;
+    }
+
+    .overflow-demo {
+        grid-template-columns: 1fr;
+    }
+
+    .shadow-demo {
+        gap: 30px;
+    }
+}

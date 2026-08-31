@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Praktik CSS Lengkap</title>
+
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+
+    <!--HEADER-->
+
+    <header class="page-header">
+        <p class="eyebrow">CSS PRACTICE</p>
+        <h1>Implementasi Property CSS</h1>
+        <p>
+            Halaman ini digunakan untuk mempraktikkan property CSS
+            satu per satu. Ubah nilai pada style.css dan lihat
+            perubahannya langsung di browser.
+        </p>
+    </header>
+
+
+    <main>
+
+        <!--1. COLOR-->
+
+        <section class="section">
+            <div class="section-heading">
+                <span class="number">01</span>
+                <div>
+                    <h2>Color</h2>
+                    <p>Mengubah warna teks.</p>
+                </div>
+            </div>
+
+            <div class="demo-area">
+                <p class="color-merah">Contoh teks warna merah</p>
+                <p class="color-blue">Contoh teks warna biru</p>
+                <p class="color-custom">Contoh teks warna custom</p>
+            </div>
+        </section>
+
+        <hr>
+
+
+        <!--2. BACKGROUND-->
+
+        <section class="section">
+            <div class="section-heading">
+                <span class="number">02</span>
+                <div>
+                    <h2>Background</h2>
+                    <p>Mengatur tampilan latar belakang elemen.</p>
+                </div>
+            </div>
+
+            <div class="background-demo">
+                <div class="background-color-1">background-color</div>
+                <div class="background-gradient-box">linear-gradient</div>
+            </div>
+        </section>
+
+        <hr>
+
+
+        <!--3. WIDTH & HEIGHT-->
+
+        <section class="section">
+            <div class="section-heading">
+                <span class="number">03</span>
+                <div>
+                    <h2>Width & Height</h2>
+                    <p>Mengatur ukuran lebar dan tinggi elemen.</p>
+                </div>
+            </div>
+
+            <div class="size-demo">
+                <div class="size-box small-box">200px × 100px</div>
+                <div class="size-box medium-box">300px × 150px</div>
+                <div class="size-box responsive-box">max-width: 100%</div>
+            </div>
+        </section>
+
+        <hr>
+
+
+        <!--4. PADDING-->
+
+        <section class="section">
+            <div class="section-heading">
+                <span class="number">04</span>
+                <div>
+                    <h2>Padding</h2>
+                    <p>Jarak antara content dengan border.</p>
+                </div>
+            </div>
+
+            <div class="padding-demo">
+                <div class="padding-box padding-small">
+                    <span>Content</span>
+                </div>
+
+                <div class="padding-box padding-large">
+                    <span>Content</span>
+                </div>
+
+                <div class="padding-box padding-different">
+                    <span>Top Right Bottom Left</span>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+
+        <!--5. MARGIN-->
+
+        <section class="section">
+            <div class="section-heading">
+                <span class="number">05</span>
+                <div>
+                    <h2>Margin</h2>
+                    <p>Jarak di luar elemen.</p>
+                </div>
+            </div>
+
+            <div class="margin-demo">
+                <div class="margin-box">Box 1</div>
+                <div class="margin-box margin-large">Box 2</div>
+                <div class="margin-box">Box 3</div>
+            </div>
+
+            <div class="auto-margin-demo">
+                <div class="center-margin-box">
+                    margin: 0 auto
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+
+        <!--6. BORDER-->
+
+        <section class="section">
+            <div class="section-heading">
+                <span class="number">06</span>
+                <div>
+                    <h2>Border</h2>
+                    <p>Membuat garis di sekeliling elemen.</p>
+                </div>
+            </div>
+
+            <div class="border-demo">
+                <div class="border-box solid-border">solid</div>
+                <div class="border-box dashed-border">dashed</div>
+                <div class="border-box dotted-border">dotted</div>
+                <div class="border-box double-border">double</div>
+            </div>
+        </section>
+
+        <hr>
+
+
+        <!--7. BORDER RADIUS-->
+
+        <section class="section">
+            <div class="section-heading">
+                <span class="number">07</span>
+                <div>
+                    <h2>Border Radius</h2>
+                    <p>Membuat sudut elemen menjadi melengkung.</p>
+                </div>
+            </div>
+
+            <div class="radius-demo">
+                <div class="radius-box radius-small">8px</div>
+                <div class="radius-box radius-large">24px</div>
+                <div class="radius-box radius-circle">50%</div>
+            </div>
+        </section>
+
+        <hr>
+
+
+        <!--8. BOX MODEL-->
+
+        <section class="section">
+            <div class="section-heading">
+                <span class="number">08</span>
+                <div>
+                    <h2>Box Model</h2>
+                    <p>Content, padding, border, dan margin.</p>
+                </div>
+            </div>
+
+            <div class="box-model-demo">
+                <div class="model-margin">
+                    <div class="model-border">
+                        <div class="model-padding">
+                            <div class="model-content">
+                                Content
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box-sizing-demo">
+                <div class="box-sizing-box content-sizing">
+                    content-box
+                </div>
+
+                <div class="box-sizing-box border-sizing">
+                    border-box
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+
+        <!--9. TYPOGRAPHY-->
+
+        <section class="section">
+            <div class="section-heading">
+                <span class="number">09</span>
+                <div>
+                    <h2>Font & Text</h2>
+                    <p>Mengatur tampilan dan posisi teks.</p>
+                </div>
+            </div>
+
+            <div class="typography-demo">
+                <h3 class="font-family-demo">Font Family</h3>
+
+                <p class="font-size-small">Font size kecil</p>
+                <p class="font-size-medium">Font size sedang</p>
+                <p class="font-size-large">Font size besar</p>
+
+                <p class="font-weight-light">Font weight 300</p>
+                <p class="font-weight-bold">Font weight 700</p>
+
+                <p class="font-style-italic">Font style italic</p>
+
+                <p class="line-height-demo">
+                    Ini adalah contoh line-height. Jarak antar baris dapat
+                    dibuat lebih rapat atau lebih renggang agar teks lebih
+                    nyaman dibaca.
+                </p>
+
+                <p class="text-align-center">
+                    Contoh text-align center
+                </p>
+
+                <a href="#" class="text-decoration-demo">
+                    Contoh text-decoration
+                </a>
+            </div>
+        </section>
+
+        <hr>
+
+
+        <!--10. DISPLAY-->
+
+        <section class="section">
+            <div class="section-heading">
+                <span class="number">10</span>
+                <div>
+                    <h2>Display</h2>
+                    <p>Mengatur bagaimana elemen ditampilkan.</p>
+                </div>
+            </div>
+
+            <div class="display-demo">
+                <div class="display-block">display: block</div>
+
+                <div class="inline-demo">
+                    <span class="display-inline">Inline 1</span>
+                    <span class="display-inline">Inline 2</span>
+                    <span class="display-inline">Inline 3</span>
+                </div>
+
+                <div class="inline-block-demo">
+                    <div class="display-inline-block">Inline Block 1</div>
+                    <div class="display-inline-block">Inline Block 2</div>
+                </div>
+
+                <div class="display-none">
+                    Elemen ini menggunakan display: none
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+
+        <!--11. FLEXBOX-->
+
+        <section class="section">
+            <div class="section-heading">
+                <span class="number">11</span>
+                <div>
+                    <h2>Flexbox</h2>
+                    <p>Mengatur layout elemen dalam satu dimensi.</p>
+                </div>
+            </div>
+
+            <div class="flex-demo">
+                <div class="flex-container">
+                    <div class="flex-item">Item 1</div>
+                    <div class="flex-item">Item 2</div>
+                    <div class="flex-item">Item 3</div>
+                </div>
+
+                <div class="flex-column-container">
+                    <div class="flex-item">Column 1</div>
+                    <div class="flex-item">Column 2</div>
+                    <div class="flex-item">Column 3</div>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+
+        <!--12. JUSTIFY CONTENT & ALIGN ITEMS-->
+
+        <section class="section">
+            <div class="section-heading">
+                <span class="number">12</span>
+                <div>
+                    <h2>Justify Content & Align Items</h2>
+                    <p>Mengatur posisi item di dalam Flexbox.</p>
+                </div>
+            </div>
+
+            <div class="alignment-demo">
+                <div class="justify-container">
+                    <div class="align-item">1</div>
+                    <div class="align-item">2</div>
+                    <div class="align-item">3</div>
+                </div>
+
+                <div class="center-container">
+                    <div class="center-item">Center</div>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+
+        <!--13. FLEX WRAP & GAP-->
+
+        <section class="section">
+            <div class="section-heading">
+                <span class="number">13</span>
+                <div>
+                    <h2>Flex Wrap & Gap</h2>
+                    <p>Mengatur pembungkusan dan jarak antar item.</p>
+                </div>
+            </div>
+
+            <div class="flex-wrap-container">
+                <div class="wrap-item">1</div>
+                <div class="wrap-item">2</div>
+                <div class="wrap-item">3</div>
+                <div class="wrap-item">4</div>
+                <div class="wrap-item">5</div>
+                <div class="wrap-item">6</div>
+                <div class="wrap-item">7</div>
+                <div class="wrap-item">8</div>
+            </div>
+        </section>
+
+        <hr>
+
+
+        <!--14. CSS GRID-->
+
+        <section class="section">
+            <div class="section-heading">
+                <span class="number">14</span>
+                <div>
+                    <h2>CSS Grid</h2>
+                    <p>Mengatur layout menggunakan baris dan kolom.</p>
+                </div>
+            </div>
+
+            <div class="grid-container">
+                <div class="grid-item">1</div>
+                <div class="grid-item">2</div>
+                <div class="grid-item">3</div>
+                <div class="grid-item">4</div>
+                <div class="grid-item">5</div>
+                <div class="grid-item">6</div>
+            </div>
+        </section>
+
+        <hr>
+
+
+        <!--15. GRID COLUMN & GRID ROW-->
+
+        <section class="section">
+            <div class="section-heading">
+                <span class="number">15</span>
+                <div>
+                    <h2>Grid Column & Grid Row</h2>
+                    <p>Mengatur posisi dan ukuran item Grid.</p>
+                </div>
+            </div>
+
+            <div class="grid-layout">
+                <header class="layout-header">Header</header>
+                <aside class="layout-sidebar">Sidebar</aside>
+                <article class="layout-content">Content</article>
+                <footer class="layout-footer">Footer</footer>
+            </div>
+        </section>
+
+        <hr>
+
+
+        <!--16. POSITION-->
+
+        <section class="section">
+            <div class="section-heading">
+                <span class="number">16</span>
+                <div>
+                    <h2>Position</h2>
+                    <p>Static, relative, absolute, fixed, dan sticky.</p>
+                </div>
+            </div>
+
+            <div class="position-demo">
+                <div class="relative-parent">
+                    Parent: position relative
+
+                    <span class="absolute-child">
+                        absolute
+                    </span>
+                </div>
+
+                <div class="sticky-demo">
+                    position: sticky
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+
+        <!--17. OVERFLOW-->
+
+        <section class="section">
+            <div class="section-heading">
+                <span class="number">17</span>
+                <div>
+                    <h2>Overflow</h2>
+                    <p>Mengatur konten yang melebihi ukuran container.</p>
+                </div>
+            </div>
+
+            <div class="overflow-demo">
+                <div class="overflow-box overflow-visible">
+                    <strong>visible</strong>
+                    <p>Konten yang terlalu panjang dapat keluar dari container.</p>
+                </div>
+
+                <div class="overflow-box overflow-hidden">
+                    <strong>hidden</strong>
+                    <p>Konten yang terlalu panjang akan disembunyikan.</p>
+                </div>
+
+                <div class="overflow-box overflow-scroll">
+                    <strong>scroll</strong>
+                    <p>Konten yang terlalu panjang dapat dilihat dengan scroll.</p>
+                </div>
+
+                <div class="overflow-box overflow-auto">
+                    <strong>auto</strong>
+                    <p>Scrollbar muncul jika konten memang melebihi container.</p>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+
+        <!--18. SHADOW-->
+
+        <section class="section">
+            <div class="section-heading">
+                <span class="number">18</span>
+                <div>
+                    <h2>Box Shadow & Text Shadow</h2>
+                    <p>Menambahkan efek bayangan.</p>
+                </div>
+            </div>
+
+            <div class="shadow-demo">
+                <div class="shadow-box">Box Shadow</div>
+                <h3 class="shadow-text">Text Shadow</h3>
+            </div>
+        </section>
+
+        <hr>
+
+
+        <!--19. OPACITY-->
+
+        <section class="section">
+            <div class="section-heading">
+                <span class="number">19</span>
+                <div>
+                    <h2>Opacity</h2>
+                    <p>Mengatur tingkat transparansi elemen.</p>
+                </div>
+            </div>
+
+            <div class="opacity-demo">
+                <div class="opacity-box opacity-one">1</div>
+                <div class="opacity-box opacity-seven">0.7</div>
+                <div class="opacity-box opacity-four">0.4</div>
+            </div>
+        </section>
+
+        <hr>
+
+
+        <!--20. CURSOR-->
+
+        <section class="section">
+            <div class="section-heading">
+                <span class="number">20</span>
+                <div>
+                    <h2>Cursor</h2>
+                    <p>Mengatur bentuk cursor ketika diarahkan ke elemen.</p>
+                </div>
+            </div>
+
+            <div class="cursor-demo">
+                <button class="cursor-pointer">pointer</button>
+                <button class="cursor-help">help</button>
+                <button class="cursor-not-allowed">not-allowed</button>
+            </div>
+        </section>
+
+        <hr>
+
+
+        <!--21. OBJECT FIT-->
+
+        <section class="section">
+            <div class="section-heading">
+                <span class="number">21</span>
+                <div>
+                    <h2>Object Fit</h2>
+                    <p>Mengatur bagaimana gambar mengisi container.</p>
+                </div>
+            </div>
+
+            <div class="object-fit-demo">
+                <figure>
+                    <figcaption>object-fit: cover</figcaption>
+                    <img class="object-cover"
+                         src="https://placehold.co/800x400"
+                         alt="Contoh gambar cover">
+                </figure>
+
+                <figure>
+                    <figcaption>object-fit: contain</figcaption>
+                    <img class="object-contain"
+                         src="https://placehold.co/800x400"
+                         alt="Contoh gambar contain">
+                </figure>
+
+                <figure>
+                    <figcaption>object-fit: fill</figcaption>
+                    <img class="object-fill"
+                         src="https://placehold.co/800x400"
+                         alt="Contoh gambar fill">
+                </figure>
+            </div>
+        </section>
+
+        <hr>
+
+
+        <!--22. TRANSITION-->
+
+        <section class="section">
+            <div class="section-heading">
+                <span class="number">22</span>
+                <div>
+                    <h2>Transition</h2>
+                    <p>Membuat perubahan property menjadi lebih halus.</p>
+                </div>
+            </div>
+
+            <button class="transition-button">
+                Hover Saya
+            </button>
+        </section>
+
+        <hr>
+
+
+        <!--23. TRANSFORM-->
+
+        <section class="section">
+            <div class="section-heading">
+                <span class="number">23</span>
+                <div>
+                    <h2>Transform</h2>
+                    <p>Translate, scale, dan rotate.</p>
+                </div>
+            </div>
+
+            <div class="transform-demo">
+                <div class="transform-box translate-box">translate</div>
+                <div class="transform-box scale-box">scale</div>
+                <div class="transform-box rotate-box">rotate</div>
+            </div>
+        </section>
+
+        <hr>
+
+
+        <!--24. PSEUDO CLASS-->
+
+        <section class="section">
+            <div class="section-heading">
+                <span class="number">24</span>
+                <div>
+                    <h2>Pseudo Class</h2>
+                    <p>Mengatur style berdasarkan kondisi elemen.</p>
+                </div>
+            </div>
+
+            <div class="pseudo-class-demo">
+                <button class="pseudo-button">
+                    :hover dan :active
+                </button>
+
+                <input class="focus-input"
+                       type="text"
+                       placeholder="Klik untuk mencoba :focus">
+
+                <label class="checkbox-label">
+                    <input type="checkbox">
+                    Coba :checked
+                </label>
+
+                <button class="disabled-button" disabled>
+                    :disabled
+                </button>
+            </div>
+        </section>
+
+        <hr>
+
+
+        <!--25. PSEUDO ELEMENT-->
+
+        <section class="section">
+            <div class="section-heading">
+                <span class="number">25</span>
+                <div>
+                    <h2>Pseudo Element</h2>
+                    <p>Menambahkan atau mengatur bagian tertentu dari elemen.</p>
+                </div>
+            </div>
+
+            <div class="pseudo-element-demo">
+                <p class="before-after-text">
+                    Contoh ::before dan ::after
+                </p>
+
+                <input class="placeholder-input"
+                       type="text"
+                       placeholder="Contoh ::placeholder">
+            </div>
+        </section>
+
+        <hr>
+
+
+        <!--26. SELECTOR-->
+
+        <section class="section">
+            <div class="section-heading">
+                <span class="number">26</span>
+                <div>
+                    <h2>CSS Selector</h2>
+                    <p>Memilih elemen HTML yang ingin diberikan style.</p>
+                </div>
+            </div>
+
+            <div class="selector-demo">
+                <p>Tag Selector</p>
+
+                <p class="class-selector">
+                    Class Selector
+                </p>
+
+                <p id="id-selector">
+                    ID Selector
+                </p>
+
+                <div class="descendant-parent">
+                    <p>Descendant Selector</p>
+                </div>
+
+                <input type="email"
+                       placeholder="Attribute Selector">
+            </div>
+        </section>
+
+        <hr>
+
+
+        <!--27. CSS VARIABLES-->
+
+        <section class="section">
+            <div class="section-heading">
+                <span class="number">27</span>
+                <div>
+                    <h2>CSS Variables</h2>
+                    <p>Menyimpan nilai CSS agar dapat digunakan kembali.</p>
+                </div>
+            </div>
+
+            <div class="variable-demo">
+                <button class="primary-button">
+                    Primary Button
+                </button>
+
+                <button class="secondary-button">
+                    Secondary Button
+                </button>
+
+                <div class="variable-card">
+                    Menggunakan CSS Variable
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+
+        <!--28. RESPONSIVE DESIGN & MEDIA QUERY-->
+
+        <section class="section">
+            <div class="section-heading">
+                <span class="number">28</span>
+                <div>
+                    <h2>Responsive Design & Media Query</h2>
+                    <p>Menyesuaikan tampilan berdasarkan ukuran layar.</p>
+                </div>
+            </div>
+
+            <div class="responsive-container">
+                <article class="responsive-card">
+                    <h3>Card 1</h3>
+                    <p>Desktop: beberapa kolom.</p>
+                </article>
+
+                <article class="responsive-card">
+                    <h3>Card 2</h3>
+                    <p>Tablet: ukuran layout menyesuaikan.</p>
+                </article>
+
+                <article class="responsive-card">
+                    <h3>Card 3</h3>
+                    <p>Mobile: satu kolom.</p>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer class="page-footer">
+        <p>Praktik CSS Dasar sampai Menengah</p>
+    </footer>
+
+</body>
+</html>

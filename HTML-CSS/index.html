@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Andi Pratama | Web Developer</title>
+
+    <!-- Menghubungkan file HTML dengan CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <h1 class="logo">Andi Pratama</h1>
+
+        <nav class="nav-menu">
+            <a href="#about">Tentang</a>
+            <a href="#projects">Project</a>
+            <a href="#contact">Kontak</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Section Tentang -->
+        <section id="about" class="about-section">
+
+            <div class="about-image">
+                <figure>
+                    <img
+                        src="asset/image.png"
+                        alt="Foto profil Andi Pratama"
+                    >
+
+                    <figcaption>
+                        Andi Pratama — Junior Web Developer
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div class="about-content">
+                <h2>Tentang Saya</h2>
+
+                <p>
+                    Halo! Saya Andi Pratama, seorang Junior Web Developer yang
+                    memiliki ketertarikan dalam pengembangan website modern dan
+                    responsif. Saya sedang mempelajari HTML, CSS, JavaScript, serta
+                    berbagai teknologi web untuk membangun website yang menarik
+                    dan mudah digunakan.
+                </p>
+
+                <a href="#projects" class="btn">Lihat Project</a>
+            </div>
+
+        </section>
+
+
+        <!-- Section Project -->
+        <section id="projects" class="project-section">
+
+            <div class="section-title">
+                <h2>Project Saya</h2>
+                <p>Beberapa project sederhana yang pernah saya kerjakan.</p>
+            </div>
+
+            <div class="project-list">
+
+                <article class="project-card">
+                    <h3>Website Portfolio Pribadi</h3>
+
+                    <p>
+                        Website portfolio pribadi untuk menampilkan informasi
+                        tentang diri saya, kemampuan, pengalaman, dan berbagai
+                        project yang pernah saya kerjakan.
+                    </p>
+
+                    <p class="technology">
+                        Teknologi: HTML dan CSS
+                    </p>
+                </article>
+
+
+                <article class="project-card">
+                    <h3>Website Kedai Kopi</h3>
+
+                    <p>
+                        Website sederhana untuk memperkenalkan sebuah usaha kedai
+                        kopi, lengkap dengan informasi menu, lokasi, dan kontak.
+                    </p>
+
+                    <p class="technology">
+                        Teknologi: HTML, CSS, dan JavaScript
+                    </p>
+                </article>
+
+
+                <article class="project-card">
+                    <h3>Aplikasi To-Do List</h3>
+
+                    <p>
+                        Aplikasi sederhana untuk membantu pengguna mencatat,
+                        menambahkan, dan menghapus daftar kegiatan sehari-hari.
+                    </p>
+
+                    <p class="technology">
+                        Teknologi: HTML, CSS, dan JavaScript
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Section Kontak -->
+        <section id="contact" class="contact-section">
+
+            <div class="contact-content">
+                <h2>Hubungi Saya</h2>
+
+                <p>
+                    Jika Anda ingin bekerja sama atau memiliki pertanyaan,
+                    silakan kirimkan pesan melalui formulir berikut.
+                </p>
+            </div>
+
+            <form class="contact-form">
+
+                <div class="form-group">
+                    <label for="name">Nama</label>
+
+                    <input
+                        id="name"
+                        name="name"
+                        type="text"
+                        placeholder="Masukkan nama Anda"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+
+                    <input
+                        id="email"
+                        name="email"
+                        type="email"
+                        placeholder="contoh@email.com"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Pesan</label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="5"
+                        placeholder="Tulis pesan Anda di sini..."
+                        required
+                    ></textarea>
+                </div>
+
+                <button type="submit" class="btn">
+                    Kirim Pesan
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <small>&copy; 2026 Andi Pratama. All Rights Reserved.</small>
+    </footer>
+
+</body>
+
+</html>
+
